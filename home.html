@@ -13,7 +13,12 @@
         <script src="jquery.counterup.min.js"></script>
         <script src="jquery.waypoints.min.js"></script>
         <script src="main.js"></script>
-		
+        <style>
+          
+          </style>
+          <script>
+           
+            </script>
             
     </head>
     <body>
@@ -30,7 +35,14 @@
             
           
               
-            <a href="#"><p id="login"><i class="fa fa-user">LOGIN/REGISTER</i></p></a>
+            <div class="dropdown">
+              <i class="dropbtn fa fa-user"></i>
+              <div class="dropdown-content">
+                <a href="#" onclick="document.getElementById('loge').style.display='block'" style="width:auto;">LOGIN</a>
+                <a href="#" onclick="document.getElementById('reg').style.display='block'" style="width:auto;">REGISTER</a>
+                
+              </div>
+            </div>
             <div id="mySidebar" class="sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
               <a href="#">About</a>
@@ -51,6 +63,63 @@
       <hr color="grey">
 
       <img name="slide" style="width: 100%;">
+      <div id="loge" class="log">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('loge').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="conta">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="conta" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('loge').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      
+<div id="reg" class="log">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('reg').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="conta">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+			<label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('reg').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
 
       <section class="domain">
         <h3>BUY YOUR DOMAIN NAME</h3>

@@ -41,3 +41,16 @@ var i=0 //start point
 		setTimeout("changeImg()",time);
 	}
 	window.onload=changeImg;  
+
+
+	//login and register
+	  // Get the modal
+	  var modal = document.getElementById('loge');
+	  var modal = document.getElementById('reg');
+	  
+	  // When the user clicks anywhere outside of the modal, close it
+	  window.onclick = function(event) {
+		  if (event.target == modal) {
+			  modal.style.display = "none";
+		  }
+	  }
