@@ -14,36 +14,39 @@
         <script src="jquery.waypoints.min.js"></script>
         <script src="main.js"></script>
         
-            
+        
     </head>
     <body>
       
         <div class="header">
           <div class="logo">
-            <img src="logo.png" alt="enaioder">
-            
-              
-            <input type="text" id="name" name="firstname" placeholder="Your name..">
+            <a href="home.html"><img src="logo2.png" alt="enaioder"></a>
+           
+          </div> 
+          <section class="search">
+            <input type="text" id="name" name="search" placeholder="search here...">
             <button type="submit" id="button"><i class="fa fa-search"></i></button>
-                
+          </section>      
               
             
           
-              
+            <section class="u">  
             <div class="dropdown">
-              <i class="dropbtn fa fa-user"></i>
+              <a href="#">My account</a>
               <div class="dropdown-content">
                 <a href="#" onclick="document.getElementById('loge').style.display='block'" style="width:auto;">LOGIN</a>
                 <a href="#" onclick="document.getElementById('reg').style.display='block'" style="width:auto;">REGISTER</a>
                 
               </div>
             </div>
+            </section>
+            
             <div id="mySidebar" class="sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              <a href="#">About</a>
+              <a href="about.html">About</a>
               <a href="#">Services</a>
               <a href="#">Clients</a>
-              <a href="#">Contact</a>
+              <a href="contact.html">Contact</a>
             </div>
             
             <div id="main">
@@ -52,10 +55,10 @@
             </div>
            
             
-          </div>
-          <hr color="grey"> 
+          
+          
         </div> 
-      <hr color="grey">
+      
 
       <img name="slide" style="width: 100%;">
       <div id="loge" class="log">
@@ -118,8 +121,11 @@
 
       <section class="domain">
         <h3>BUY YOUR DOMAIN NAME</h3>
-        <input type="text" placeholder="search your domain">
-        <input type="submit" value="Submit">
+        <input type="text" id="subdomaintwo" value="WWW." disabled/>
+        <input type="text" placeholder="search your domain" id="subdomain">
+        
+        
+        <input type="submit" value="search domain">
         <h5>.COM 500RS <span>|</span> .IN 250RS <span>|</span> .OTHERS 100RS</h5>
         
         
@@ -292,8 +298,8 @@
               <div class="col-sm-3">
                   <h6>Quick Links</h6>
                 <ul class="footer-links">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Sitemap</a></li>
@@ -302,7 +308,7 @@
           </div>
           <hr>
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-              <a href="#">Eniacoder</a>.
+              <a href="home.html">Eniacoder</a>.
                  </p>
                 </div>          
          </div>         

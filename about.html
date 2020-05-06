@@ -14,35 +14,56 @@
 
     </head>
     <body>
-        <div class="header">
-            <div class="logo">
-              <img src="logo.png" alt="enaioder">
-              
-                
-              <a href="#"><p id="login"><i class="fa fa-user">LOGIN/REGISTER </i></p></a>
-              <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-              </div>
-              
-              <div id="main">
-                <button class="openbtn" onclick="openNav()">☰ </button>  
-                
-              </div>
-             
+      <div class="header">
+        <div class="logo">
+          <a href="home.html"><img src="logo2.png" alt="enaioder"></a>
+         
+        </div> 
+        <section class="search">
+          <input type="text" id="name" name="firstname" placeholder="Your name..">
+          <button type="submit" id="button"><i class="fa fa-search"></i></button>
+        </section>      
+            
+          
+        
+          <section class="u">  
+          <div class="dropdown">
+            <a href="#">My account</a>
+            <div class="dropdown-content">
+              <a href="#" onclick="document.getElementById('loge').style.display='block'" style="width:auto;">LOGIN</a>
+              <a href="#" onclick="document.getElementById('reg').style.display='block'" style="width:auto;">REGISTER</a>
               
             </div>
-            <hr color="grey"> 
           </div>
+          </section>
+          
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ </button>  
+            
+          </div>
+         
+          
+        
+        
+      </div> 
 
         <div class="bg-img">
             <h3 >About us</h3>
             
             
         </div> 
+        <section class="why">
+        <iframe  src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        </section>
         <div class="we">
             <h3 style="text-align: center;">-WHO WE ARE-</h3>
             <hr>
@@ -91,8 +112,8 @@
                <div class="col-sm-3">
                    <h6>Quick Links</h6>
                  <ul class="footer-links">
-                   <li><a href="#">About Us</a></li>
-                   <li><a href="#">Contact Us</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
                    <li><a href="#">Privacy Policy</a></li>
                    <li><a href="#">Blog</a></li>
                    <li><a href="#">Sitemap</a></li>
